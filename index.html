@@ -11,6 +11,8 @@
             color: #6a1b9a; /* Dark purple text */
             text-align: center;
             padding: 20px;
+            background-image: url('https://i.imgur.com/8Z5Z5gD.png'); /* Optional background image */
+            background-size: cover;
         }
         h1 {
             font-size: 3em;
@@ -26,6 +28,7 @@
             font-size: 1.5em;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin: 20px 0;
         }
         .start-button:hover {
             background-color: #c51162; /* Darker pink on hover */
@@ -37,6 +40,7 @@
             padding: 20px;
             margin-top: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
         }
         .heart {
             color: #d5006d; /* Pink heart */
@@ -47,6 +51,15 @@
             font-size: 1em;
             color: #9e9e9e;
         }
+        .cute-images {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .cute-images img {
+            width: 100px; /* Adjust size as needed */
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
@@ -54,8 +67,15 @@
     <h1>Congratulations, My Love!</h1>
     <button class="start-button" onclick="showMessage()">Press Here to Start</button>
 
+    <div class="cute-images">
+        <img src="https://i.pinimg.com/originals/65/05/77/650577673fad701100d239c52fb6f044.gif" alt="Hello Kitty"> <!-- Replace with actual Hello Kitty image URL -->
+        <img src="https://i.pinimg.com/originals/a2/7f/05/a27f058648ef8aeb5fcc1648b1c344b4.gif" alt="Cinnamoroll"> <!-- Replace with actual Cinnamoroll image URL -->
+        <img src="https://i.pinimg.com/originals/ee/15/de/ee15dec2c7026ff3408aff67b1c0576f.gif" alt="Hello Kitty"> <!-- Replace with actual Hello Kitty image URL -->
+        <img src="https://i.pinimg.com/originals/8a/89/bc/8a89bcaa605eaea933b574395d979804.gif" alt="Bunny">
+    </div>
+
     <div class="message" id="message">
-        <p>Hello my pretty love 💕,</p>
+        <p>Hello my love 💕,</p>
         <p>The day has come! It’s finally over after everything you’ve gone through. Every drop of sweat and every tear, every pain and struggle... it’s all paid off. That’s why I made this little gift to congratulate you, baby! For surviving this far. For not giving up, even when everything felt out of place. All the stress has finally eased.</p>
         <p>Congratulations for giving your best, even when you were struggling with yourself. You deserve this, baby. You deserve every good thing that will come your way. I’m so, so, <em>so</em> proud of you for making it this far. Your past self would be in awe of where you are now standing strong for yourself, your friends, your parents, and for God.</p>
         <p>I love you so much, baby. And I hope this small gift touches your heart and reminds you just how far you’ve come. ❤️</p>
@@ -63,7 +83,7 @@
 
     <footer>
         <p>With all my love,</p>
-        <p>Isa</p>
+        <p>Your Name</p>
     </footer>
 
     <script>
