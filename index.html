@@ -59,12 +59,22 @@
             width: 100px; /* Adjust size as needed */
             margin: 0 10px;
         }
+        /* Media query for mobile device */ 
+        @media only screen and (max-width: 768px) {
+            h1 { 
+                text-align: center /* Center the text */ 
+                margin: 0 auto; ?* Center the block element */ 
+            }
+            .start-button { 
+                width: 100%; /* Make button full width on mobile */
+            }
+        } 
     </style>
 </head>
 <body>
     
     <h1>Congratulations, My Love!</h1>
-    <button class="start-button" onclick="showMessage()">Click here pretty</button>
+    <button class="start-button" onclick="showMessage()">click here pretty</button>
 
     <div class="cute-images">
         <img src="https://i.pinimg.com/originals/65/05/77/650577673fad701100d239c52fb6f044.gif" alt="Hello Kitty"> <!-- Replace with actual Hello Kitty image URL -->
